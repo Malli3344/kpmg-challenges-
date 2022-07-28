@@ -45,7 +45,7 @@ resource "aws_route_table" "private" {
     }
 
     tags               = {
-    Name               = "Private Route_Darwin"
+    Name               = "Private Route_Durga"
     }
   
 }

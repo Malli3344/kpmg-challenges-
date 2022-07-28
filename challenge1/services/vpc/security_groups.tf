@@ -1,9 +1,9 @@
 
 # Bastion
 
-resource "aws_security_group" "bastion_ssh_all_sg_darwin" {
+resource "aws_security_group" "bastion_ssh_all_sg_durga" {
     
-    name            = "bastion_ssh_all_sg_darwin"
+    name            = "bastion_ssh_all_sg_durga"
     description     = "Allow SSH from Anywhere"
     vpc_id          = aws_vpc.vpcdarwin.id #module.site.output_vpc_id 
 
@@ -24,7 +24,7 @@ resource "aws_security_group" "bastion_ssh_all_sg_darwin" {
 
     tags            = {
         
-    Name            = "Bastion Allow All_Darwin"
+    Name            = "Bastion Allow All_Durga"
     }
 
      

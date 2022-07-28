@@ -1,24 +1,24 @@
-resource "aws_vpc" "vpcdarwin" {
+resource "aws_vpc" "vpcdurga" {
     cidr_block = var.vpc_cdir_block
 
     tags = {
-        Name = "VPC Darwin"
+        Name = "VPC Durga"
     }
   
 }
 output "output_vpc_id" {
-  value = aws_vpc.vpcdarwin.id
+  value = aws_vpc.vpcdurga.id
 }
 
 
 resource "aws_subnet" "publicsubnet1" {
     
-    vpc_id            = aws_vpc.vpcdarwin.id
+    vpc_id            = aws_vpc.vpcdurga.id
     cidr_block        = var.public_subnet_1
     availability_zone = var.availability_zone_A
 
     tags              = {
-    Name              = "Public Subnet-1_Darwin"
+    Name              = "Public Subnet-1_Durga"
     }
   
 }
@@ -30,12 +30,12 @@ output "outputpublicsubnet1" {
 
 resource "aws_subnet" "publicsubnet2" {
     
-    vpc_id            = aws_vpc.vpcdarwin.id
+    vpc_id            = aws_vpc.vpcdurga.id
     cidr_block        = var.public_subnet_2
     availability_zone = var.availability_zone_B
 
     tags              = {
-    Name              = "Public Subnet-2_Darwin"
+    Name              = "Public Subnet-2_Durga"
     }
   
 }
@@ -46,12 +46,12 @@ output "outputpublicsubnet2" {
 
 resource "aws_subnet" "privatesubnet3" {
     
-    vpc_id            = aws_vpc.vpcdarwin.id
+    vpc_id            = aws_vpc.vpcdurga.id
     cidr_block        = var.private_subnet_3
     availability_zone = var.availability_zone_A
 
     tags              = {
-    Name              = "Private Subnet-3_Darwin"
+    Name              = "Private Subnet-3_Durga"
     }
   
 }
@@ -63,12 +63,12 @@ output "outputprivatesubnet3" {
 
 resource "aws_subnet" "privatesubnet4" {
     
-    vpc_id            = aws_vpc.vpcdarwin.id
+    vpc_id            = aws_vpc.vpcdurga.id
     cidr_block        = var.private_subnet_4
     availability_zone = var.availability_zone_B
 
     tags              = {
-    Name              = "Private Subnet-4_Darwin"
+    Name              = "Private Subnet-4_Durga"
 
     }
   

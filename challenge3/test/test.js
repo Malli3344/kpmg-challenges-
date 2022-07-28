@@ -4,8 +4,8 @@ var getIn = require('../index.js');
 console.log(getIn);
 
 var object = {
-    firstName: "John",
-    lastName: "Doe",
+    firstName: "durga",
+    lastName: "baddeti",
     address: {
         home: {
             addressLines: {
